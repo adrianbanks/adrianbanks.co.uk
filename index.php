@@ -54,7 +54,7 @@ if (isset($_GET['p'])) {
     $postUrl = $redirects[$_GET['p']];
     
     if ($postUrl != '') {
-        //header("HTTP/1.1 301 Moved Permanently"); 
+        header("HTTP/1.1 301 Moved Permanently");
         header("Location: https://blog.adrianbanks.co.uk" . $postUrl); 
     }
     else {
